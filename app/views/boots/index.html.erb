@@ -1,0 +1,35 @@
+<h2>Boots</h2>
+
+<table class="table table-striped">
+  <tr>
+    <th>Cohort</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Github</th>
+    <th>Quora</th>
+    <th>Twitter</th>
+    <th>Facebook</th>
+    <th>Linked In</th>
+    <th>Blog</th>
+    <th>Hacker News</th>
+  </tr>
+  <% for boot in @boots %>
+    <tr>
+      <td><%= boot.cohort %></td>
+      <td><%= boot.name %></td>
+      <td><%= boot.email %></td>
+      <td><%= boot.github %></td>
+      <td><%= boot.quora %></td>
+      <td><%= boot.twitter %></td>
+      <td><%= boot.facebook %></td>
+      <td><%= boot.linked_in %></td>
+      <td><%= boot.blog %></td>
+      <td><%= boot.hacker_news %></td>
+      <td><%= link_to "Show", boot %></td>
+      <td><%= link_to "Edit", edit_boot_path(boot) %></td>
+      <td><%= link_to "Destroy", boot, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Boot", new_boot_path %></p>

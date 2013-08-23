@@ -1,0 +1,48 @@
+<% title "Boot" %>
+
+<p>
+  <strong>Cohort:</strong>
+  <%= @boot.cohort %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @boot.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @boot.email %>
+</p>
+<p>
+  <strong>Github:</strong>
+  <%= @boot.github %>
+</p>
+<p>
+  <strong>Quora:</strong>
+  <%= @boot.quora %>
+</p>
+<p>
+  <strong>Twitter:</strong>
+  <%= @boot.twitter %>
+</p>
+<p>
+  <strong>Facebook:</strong>
+  <%= @boot.facebook %>
+</p>
+<p>
+  <strong>Linked In:</strong>
+  <%= @boot.linked_in %>
+</p>
+<p>
+  <strong>Blog:</strong>
+  <%= @boot.blog %>
+</p>
+<p>
+  <strong>Hacker News:</strong>
+  <%= @boot.hacker_news %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_boot_path(@boot) %> |
+  <%= link_to "Destroy", @boot, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", boots_path %>
+</p>

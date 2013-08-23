@@ -1,0 +1,8 @@
+<h1>Welcome to Socrateam!</h1>
+<h3>Oauth with LinkedIn below.</h3>
+<% if current_user %>
+  Signed in as <%= current_user.name %>!
+  <%= link_to "Sign out", signout_path %>
+<% else %>
+  <%= link_to "Sign in with Linkedin", "/auth/linkedin" %>
+<% end %>
